@@ -15,13 +15,13 @@ public class User {
 	
 	private String userName;
 	private String userPassword;
-	/*private String data;
+	private String datos;
 	private String status;
 	private Boolean isDeleted;
 	private Long ranking;
-	private String image;*/
+	private String image;
 	
-	private User() {
+	public User() {
 		
 	}
 	
@@ -47,6 +47,43 @@ public class User {
 		userPassword = password;
 	}
 	
+	public void setData(String data) {
+		this.datos = data;
+	}
 	
+	public String getData() {
+		return datos;
+	}
 	
+	public Boolean getIsDeleted() {
+		return isDeleted;
+	}
+	
+	public void setIsDeleted(Boolean deleted) {
+		isDeleted = deleted;
+	}
+	
+	public Long getRanking() {
+		return ranking;
+	}
+	
+	public void setRanking(Long ranking) {
+		this.ranking = ranking;
+	}
+	
+	public String getImage() {
+		return image;
+	}
+	
+	public void setImage(String image) {
+		this.image = image;
+	}
+	
+	public String getStatus() {
+		return status;
+	}
+	
+	public void setStatus(String status) {
+		this.status = status;
+	}
 }
