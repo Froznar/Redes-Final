@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	
+	<script>
+		/*$.ajax({
+			type:"POST",
+			url: 'localhost:8181/register',
+			data:{
+				"image": "",
+				  "userPassword": "1234",
+				  "datos": "I am a happy person",
+				  "isDeleted": "false",
+				  "ranking": 0,
+				  "userName": "Carlo",
+				  "status": "Happy"
+			},
+			dataType: "json"
+				
+		})*/
+		
+	</script>
+	
 	<title> Cheer Up!</title>
 </head>
 <body>
 
-	<h2>Login</h2>
+	<h2>Register</h2>
 
 	<p th:text="'Hello, ' + ${name} +  '!'" />
+	
+	<form action="/register" method="post">
+	  User Name: <input type="text" name="userName"><br>
+	  Password: <input type="text" name="userPassword"><br>
+	  <input type="submit" value="Register">
+	</form>
 </body>
 
 </html>

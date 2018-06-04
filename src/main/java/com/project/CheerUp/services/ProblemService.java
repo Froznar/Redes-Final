@@ -23,5 +23,11 @@ public class ProblemService {
 	public List<Problem> findByAuthor(String author){
 		return problemRepository.findByAuthor(author);
 	}
+	
+	@Transactional
+	public void save(String userName, String categoryName, Problem problem) {
+		problemRepository.save(userName, categoryName, problem.getBody(), problem.getTimestamp());
+	}
+	
 
 }
