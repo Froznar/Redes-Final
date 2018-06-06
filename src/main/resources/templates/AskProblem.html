@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	
+	<title> Cheer Up!</title>
+</head>
+<body>
+
+	<h2>Login</h2>
+
+	<form action="/ask_problem" method="post">
+	  Ask your problem!: <input type="text" name="body"><br>
+	  <input type="radio" name="categoryName" value="Animals"> Animals <br>
+	  <input type="radio" name="categoryName" value="Money"> Money <br>
+	  <input type="submit" value="Ask!">
+	</form>
+	
+	<form action="/update" method="post">
+		My data: <input type="text" name="datos"><br>
+		Status: <input type="text" name="status"><br>
+		<input type="submit" value="Update Info!">
+	</form>
+</body>
+
+</html>

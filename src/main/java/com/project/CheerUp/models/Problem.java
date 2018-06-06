@@ -3,6 +3,7 @@ package com.project.CheerUp.models;
 import org.neo4j.ogm.annotation.GeneratedValue;
 import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.NodeEntity;
+import org.neo4j.ogm.annotation.Relationship;
 
 @NodeEntity
 public class Problem {
@@ -12,14 +13,17 @@ public class Problem {
 	private String body;
 	private Long timestamp;
 	
+	//@Relationship(type="BELONGS_IN", direction=Relationship.OUTGOING)
+	//private Category category;
+	
 	public Problem() {
-		
+
 	}
 	
-	public Problem(String author, String body, Long timestamp) {
+	public Problem(String author, String body) {
 		this.author = author;
 		this.body = body;
-		this.timestamp = timestamp;
+		this.timestamp = System.currentTimeMillis();
 	}
 	
 	public String getAuthor() {
@@ -45,4 +49,12 @@ public class Problem {
 	public void setTimestamp(Long timestamp) {
 		this.timestamp = timestamp;
 	}
+	
+	/*public void setCategory(Category category) {
+		this.category = category;
+	}
+	
+	public Category getCategory() {
+		return category;
+	}*/
 }

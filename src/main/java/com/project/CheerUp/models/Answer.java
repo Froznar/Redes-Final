@@ -17,11 +17,11 @@ public class Answer {
 		
 	}
 	
-	public Answer(String author, String body, Long timestamp, Long rating) {
+	public Answer(String author, String body) {
 		this.author = author;
 		this.body = body;
-		this.timestamp = timestamp;
-		this.rating = rating;
+		this.timestamp = System.currentTimeMillis();
+		this.rating = (long) 0;
 	}
 	
 	public String getAuthor() {

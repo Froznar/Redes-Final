@@ -16,4 +16,7 @@ public interface ProblemRepository extends Neo4jRepository<Problem, Long>{
 	@Query("MATCH(p:Problem{author:{author}}) RETURN p")
 	List<Problem> findByAuthor(@Param("author") String author);
 	
+	@Query("MATCH(u:User{userName:{userName}}) MATCH(c:Category{categoryName:{categoryName}}) CREATE(p:Problem{author:{userName}, body:{body}, timestamp:{timestamp}}) CREATE( (u)-[:HAS]->(p)-[:BELONGS_IN]->(c) )")
+	void save(@Param("userName") String userName, @Param("categoryName") String categoryName, @Param("body") String body, @Param("timestamp") Long timestamp);
+	
 }
