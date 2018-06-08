@@ -33,7 +33,7 @@ public class UserService {
 	
 	@Transactional
 	public User save(User user) {
-		return userRepository.save(user.getUserName(), user.getUserPassword());
+		return userRepository.save(user.getUserName(), user.getUserPassword(), user.getEmail());
 	}
 	
 	@Transactional

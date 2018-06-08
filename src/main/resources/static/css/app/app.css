@@ -1,0 +1,102 @@
+body,
+html {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	font-size: 3em
+}
+
+h2 {
+	font-size: 2em
+}
+
+h3 {
+	font-size: 1em
+}
+
+/* INDEX PAGE*/
+
+.index {
+	height: 100%;
+	background-image: URL(/images/index-background.jpg);	
+}
+
+.screen-cover {
+	background-color: rgb(100, 100, 100, 0.5);
+	height: 100%;
+}
+
+.main-title {
+	padding-bottom: 3%;
+	text-align: center;
+	color: whitesmoke;
+}
+
+.to-login{
+	padding-top: 3%;
+	align-content: center;
+	text-align: center;
+}
+
+.forms-container {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.form-container {
+	padding: 10%;
+}
+
+.login {
+	background-color: rgb(10, 10, 10, 0.8);
+	color: whitesmoke;
+}
+
+.singin {
+	background-color: rgb(200, 200, 200, 0.8);
+}
+
+/*MAIN PAGE*/
+.main-background{
+	background: whitesmoke;
+	width: 100%;
+}
+.main-page{
+	width: 80%;
+	background-color: #ffc4e7;
+	text-align: center;
+	
+}
+.main-user{
+	margin-bottom: 5%;
+	margin-top: 5%;
+	background-color: #9da2ff;
+}
+.problemas{
+	margin-right: 2%;
+	background-color: #ffbf66; 
+	padding-bottom: 5%;
+	padding-top: 5%;
+}
+.datos-utiles{
+	margin-left: 2%;
+	background-color: #a3e3b8;
+}
+
+
+.retrato{
+	height: auto;
+	width: 100%;
+	padding-bottom: 2%;
+	padding-top: 2%;
+}
+
+
+

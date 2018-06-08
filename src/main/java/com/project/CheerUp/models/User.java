@@ -15,6 +15,7 @@ public class User {
 	
 	private String userName;
 	private String userPassword;
+	private String email;
 	private String datos;
 	private String status;
 	private Boolean isDeleted;
@@ -25,10 +26,10 @@ public class User {
 		
 	}
 	
-	public User(String name, String password) {
+	public User(String name, String password, String email) {
 		userName = name;
 		userPassword = password;
-		
+		this.email = email;
 	}
 	
 	public String getUserName() {
@@ -37,6 +38,14 @@ public class User {
 	
 	public void setUserName(String name) {
 		userName = name;
+	}
+	
+	public String getEmail() {
+		return email;
+	}
+	
+	public void setEmail(String email) {
+		this.email = email;
 	}
 	
 	public String getUserPassword() {

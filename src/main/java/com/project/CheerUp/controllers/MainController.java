@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@RequestMapping("/")
 public class MainController {
 
 	
@@ -31,7 +30,7 @@ public class MainController {
 	String Profile(@PathVariable("userName") String userName, @CookieValue(value = "login", defaultValue = "-1") String value) {
 		/*if(userName.equals(value)) return "Es tu usuario:" + userName;
 		return userName;*/
-		return "AskProblem.html";
+		return "askProblem.html";
 	}
 	
 	@RequestMapping("/answerProblem")
